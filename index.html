@@ -1,13 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Marwan Shara | Software Engineer, Data &amp; AI</title>
+    <meta
+      name="description"
+      content="Software Engineer specializing in data & AI. Startup co-founder, shipped to 20,000+ users at enterprise scale, and built ETL pipelines powering AI-health workflows."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Marwan Shara | Software Engineer, Data & AI" />
+    <meta
+      property="og:description"
+      content="Startup co-founder · enterprise scale (20K+ users) · AI-health data engineering · LLM efficiency researcher."
+    />
+    <meta property="og:image" content="assets/img/og.png" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>Hello Testing</h1>
+    <!-- decorative animated grid backdrop -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <!-- ============================== NAV ============================== -->
+    <header class="nav" id="top">
+      <a class="nav__brand" href="#top">
+        <span class="nav__prompt">~/</span>marwan<span class="nav__cursor">_</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">about</a>
+        <a href="#experience">experience</a>
+        <a href="#thesis">thesis</a>
+        <a href="#projects">projects</a>
+        <a href="#contact" class="nav__cta">contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ============================== HERO ============================== -->
+      <section class="hero" id="hero">
+        <p class="hero__eyebrow reveal">
+          <span class="status-dot"></span> Available for new opportunities
+        </p>
+        <h1 class="hero__title reveal">
+          Marwan Shara
+        </h1>
+        <p class="hero__role reveal">
+          <span class="type" data-type='["Software Engineer, Data & AI","Startup co-founder","Cloud Computing specialist","LLM Power Efficiency Researcher"]'></span>
+        </p>
+        <p class="hero__hook reveal">
+          I <strong>co-founded a startup</strong> and took products <strong>from 0 to 1</strong>,
+          shipped software to <strong>20,000+ users</strong> at enterprise scale, and supported
+          building <strong>ETL pipelines that help doctors turn data into insights using AI</strong> to
+          improve patient care. Most engineers do one of those. I&rsquo;ve done all three.
+        </p>
+        <div class="hero__cta reveal">
+          <a class="btn btn--primary" href="#contact">Let&rsquo;s talk &rarr;</a>
+          <a class="btn btn--ghost" href="mailto:marwan02shara@gmail.com?subject=Resume%20request&amp;body=Hi%20Marwan%2C%20I%27d%20like%20a%20copy%20of%20your%20resume.">Request resume</a>
+        </div>
+        <dl class="hero__stats reveal">
+          <div><dt>20K+</dt><dd>users served</dd></div>
+          <div><dt>~180K</dt><dd>records piped</dd></div>
+          <div><dt>62%</dt><dd>faster pipelines</dd></div>
+          <div><dt>4</dt><dd>industries shipped</dd></div>
+        </dl>
+      </section>
+
+      <!-- ============================== ABOUT ============================== -->
+      <section class="section" id="about">
+        <header class="section__head reveal">
+          <span class="section__index">01</span>
+          <h2 class="section__title">The story</h2>
+        </header>
+        <div class="about reveal">
+          <p>
+            I&rsquo;m a recent <strong>Honours Computer Science</strong> graduate
+            (Specialization in <strong>Cloud Computing</strong>) who didn&rsquo;t wait for
+            permission to build. I <strong>co-founded a startup</strong> and shipped a real
+            product to real users, then took that founder&rsquo;s urgency into the enterprise,
+            engineering software relied on by <strong>20,000+ people</strong>.
+          </p>
+          <p>
+            From there I went deep into <strong>data and AI in healthcare</strong>: designing
+            cloud ETL pipelines, wrangling hundreds of thousands of patient records, and
+            cutting model latency so clinical teams could focus on care instead of
+            infrastructure. Along the way I researched something the industry is only starting
+            to take seriously: <strong>the energy cost of running LLMs on the edge</strong>.
+          </p>
+          <p class="about__kicker">
+            Startup grit. Enterprise scale. Research depth. The combination is rare,
+            and it&rsquo;s exactly what I bring to a team.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================== EXPERIENCE ============================== -->
+      <section class="section" id="experience">
+        <header class="section__head reveal">
+          <span class="section__index">02</span>
+          <h2 class="section__title">Where I&rsquo;ve made impact</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="tl reveal">
+            <div class="tl__meta">
+              <span class="tl__date">Jan 2026 - Present</span>
+              <span class="tl__place">Washington, D.C.</span>
+            </div>
+            <div class="tl__body">
+              <h3 class="tl__role">Software Engineer, Data</h3>
+              <p class="tl__org">AI CoLab · Georgetown University</p>
+              <ul class="tl__points">
+                <li>Contributed to <strong>AWS ETL pipelines</strong> (Python &amp; PySpark) across <strong>~180K records</strong> and helped ingest <strong>~25K medical images</strong> into GCP, supporting clinical prioritization and a cancer-detection model.</li>
+                <li>Supported speed and quality across AI workflows: helped cut a pipeline <strong>4 hrs → 1.5 hrs</strong>, saved <strong>10–15 hrs/week</strong> with GPT-4 automation, contributed to a <strong>20%</strong> Llama inference-latency reduction on Azure ML + Triton, and helped build an automated model-evaluation framework.</li>
+              </ul>
+              <ul class="tags">
+                <li>AWS</li><li>PySpark</li><li>Python</li><li>GCP</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl reveal">
+            <div class="tl__meta">
+              <span class="tl__date">May 2025 - Aug 2025</span>
+              <span class="tl__place">Guelph, ON</span>
+            </div>
+            <div class="tl__body">
+              <h3 class="tl__role">Software Developer Co-op</h3>
+              <p class="tl__org">OCAS</p>
+              <ul class="tl__points">
+                <li>Engineered an <strong>event-driven email notification service</strong> in .NET/C# that improved payment transparency for <strong>20,000+ users</strong> and cut call-center reliance.</li>
+                <li>Championed adoption of a new <strong>web security headers</strong> package, hardening the payment page to <strong>enterprise-grade security</strong> for an embedded third-party iframe.</li>
+              </ul>
+              <ul class="tags">
+                <li>.NET / C#</li><li>Blazor</li><li>Event-driven</li><li>Tailwind</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl reveal">
+            <div class="tl__meta">
+              <span class="tl__date">Jan 2022 - Mar 2023</span>
+              <span class="tl__place">Mississauga, ON</span>
+            </div>
+            <div class="tl__body">
+              <h3 class="tl__role">Co-Founder &amp; Software Engineer</h3>
+              <p class="tl__org">Cribify</p>
+              <ul class="tl__points">
+                <li><strong>Cold-called landlords and students</strong> to uncover housing pain points firsthand, onboarding <strong>Western University admin</strong> as early adopters and turning direct customer conversations into the product roadmap.</li>
+                <li>Shipped a <strong>Point-of-Interest microservice</strong> (TypeScript, Node.js, Google Geolocation, Firestore) straight from that feedback, cutting student housing search by <strong>6+ hours</strong>.</li>
+              </ul>
+              <ul class="tags">
+                <li>TypeScript</li><li>Node.js</li><li>Firestore</li><li>0→1</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl reveal">
+            <div class="tl__meta">
+              <span class="tl__date">Jun 2021 - Aug 2021</span>
+              <span class="tl__place">Washington, D.C.</span>
+            </div>
+            <div class="tl__body">
+              <h3 class="tl__role">Data Engineer Intern</h3>
+              <p class="tl__org">Georgetown University Medical Center</p>
+              <ul class="tl__points">
+                <li>Built a <strong>Cloud Dataflow ETL pipeline</strong> (Python, SQL, BigQuery) migrating <strong>tens of thousands of patient records</strong> into REDCap, saving clinical staff <strong>10 hrs/week</strong> and improving data reliability.</li>
+              </ul>
+              <ul class="tags">
+                <li>BigQuery</li><li>Dataflow</li><li>Python</li><li>SQL</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ============================== THESIS ============================== -->
+      <section class="section" id="thesis">
+        <header class="section__head reveal">
+          <span class="section__index">03</span>
+          <h2 class="section__title">Research: LLMs at the edge</h2>
+        </header>
+        <div class="thesis reveal">
+          <p class="thesis__award">
+            <span class="thesis__award-icon" aria-hidden="true">★</span>
+            Awarded the <strong>highest thesis mark in my school and cohort</strong>
+          </p>
+
+          <p class="thesis__lead">
+            My undergraduate thesis profiles the <strong>power consumption of Vision-Language
+            Models running on the edge</strong>, implemented on a <strong>Raspberry Pi 5</strong>
+            with Ollama. Language models are compute-hungry and draw significant power, so IoT
+            developers building LLM apps on the edge need to know their workload&rsquo;s draw to size
+            the right battery. The existing literature had no framework to capture that
+            comprehensively, so I built one from scratch, designed to generalize to
+            <strong>any model, inference engine, and device</strong>.
+          </p>
+
+          <dl class="thesis__stats">
+            <div><dt>5,000+</dt><dd>images captured &amp; labeled</dd></div>
+            <div><dt>3</dt><dd>measurement methods fused</dd></div>
+            <div><dt>real-time</dt><dd>subsystem &amp; device monitoring</dd></div>
+          </dl>
+
+          <h3 class="thesis__sub">Gaps I found in existing methods</h3>
+          <ul class="thesis__points">
+            <li><strong>No subsystem visibility.</strong> Existing tools couldn&rsquo;t isolate CPU vs. RAM draw, so you couldn&rsquo;t tell which component dominated.</li>
+            <li><strong>Unverified accuracy.</strong> No way to confirm measurements were actually correct.</li>
+            <li><strong>No custom sampling rate.</strong> USB meters are locked to vendor rates, pushing researchers to read values by eye and inject human error.</li>
+            <li><strong>Not cost-effective.</strong> Accurate, high-rate meters run $600&ndash;1,400, still skip CPU/RAM, and demand electrical-engineering know-how.</li>
+            <li><strong>No real-time dashboard.</strong> With many hardware and software parts interacting, anomalies needed to be caught visually and early.</li>
+          </ul>
+
+          <h3 class="thesis__sub">Three measurement methods, combined</h3>
+          <div class="thesis__methods">
+            <article class="method">
+              <h4>Software-defined meter</h4>
+              <p class="method__cost">Free, built into the RPi 5</p>
+              <p>Queries per-component power (CPU, RAM, WiFi, system rails) via <code>vcgencmd</code>. I parse the raw GPU output with regex into CSV. Supports a custom sampling rate and real-time reads.</p>
+            </article>
+            <article class="method">
+              <h4>IoT-based meter</h4>
+              <p class="method__cost">$20, Shelly Plug US Gen4</p>
+              <p>Captures total device power over a WebSocket connection from my MacBook, logged to CSV. Cost-effective and real-time. (TypeScript)</p>
+            </article>
+            <article class="method">
+              <h4>Plug-based meter</h4>
+              <p class="method__cost">Verification</p>
+              <p>A redundant onboard-display meter used to confirm the IoT meter is accurate and not faulty.</p>
+            </article>
+          </div>
+
+          <h3 class="thesis__sub">Engineering challenges I solved</h3>
+          <ul class="thesis__points">
+            <li><strong>Built my own dataset.</strong> Public datasets were inconsistent, so I attached a Raspberry Pi Camera Module 3 and captured 5,000+ images of a driveway with full control over angle, quality, and frequency.</li>
+            <li><strong>Custom labeler.</strong> Built a tool in Lovable with key-bound labels for rapid tagging, and disabled mutually exclusive options (e.g. daytime locks out nighttime) to cut labeling errors.</li>
+            <li><strong>Synchronized the meters.</strong> Stood up an HTTP server on the RPi 5 that signals the IoT meter to start, aligning timestamps across both data sources instead of triggering them by hand.</li>
+            <li><strong>Real-time observability.</strong> Wired Prometheus and Grafana Cloud to stream per-subsystem and total device power live during experiments.</li>
+            <li><strong>Concurrent profiling.</strong> Used Python <code>multiprocessing</code> and <code>subprocess</code> to run the profiler and Gemma 3 inference simultaneously; supports any open-source Ollama model.</li>
+          </ul>
+
+          <h3 class="thesis__sub">The framework, end to end</h3>
+          <ol class="thesis__steps">
+            <li>Collect the data to be power-profiled</li>
+            <li>Choose an inference engine on the device under test</li>
+            <li>Sync the device profiler with the subsystem profiler</li>
+            <li>Run the right profiling method per platform (nvidia-smi, Intel RAPL, or <code>vcgencmd</code>)</li>
+            <li>Collect the measurements</li>
+            <li>Structure the data when it arrives unstructured</li>
+          </ol>
+
+          <ul class="tags">
+            <li>Raspberry Pi 5</li><li>Ollama</li><li>Gemma 3</li><li>Python</li>
+            <li>TypeScript</li><li>Prometheus</li><li>Grafana</li><li>vcgencmd</li>
+          </ul>
+
+          <div class="thesis__cta">
+            <p>Want the full framework, methodology, and findings?</p>
+            <a class="btn btn--primary" href="mailto:marwan02shara@gmail.com?subject=Thesis%20access%20request&amp;body=Hi%20Marwan%2C%20I%27d%20like%20to%20get%20access%20to%20your%20thesis%20on%20profiling%20power%20consumption%20of%20Vision-Language%20Models%20on%20the%20edge.">
+              Request thesis access &rarr;
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== PROJECTS ============================== -->
+      <section class="section" id="projects">
+        <header class="section__head reveal">
+          <span class="section__index">04</span>
+          <h2 class="section__title">Selected projects</h2>
+        </header>
+        <div class="projects">
+          <!-- TODO(marwan): add real tags & links for each project. -->
+          <article class="card reveal">
+            <div class="card__top">
+              <h3 class="card__title">AI Resume Assistant</h3>
+              <span class="card__icon">›_</span>
+            </div>
+            <p class="card__desc">Takes the tedious pain out of tailoring resumes to job descriptions by pairing AI with a clean UI that simplifies the whole process.</p>
+            <ul class="tags"><li>AI</li><li>LLM</li><li>Python</li><li>AWS</li><li>React</li></ul>
+            <div class="card__links">
+              <a href="#">Live ↗</a>
+              <a href="#">Code ↗</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__top">
+              <h3 class="card__title">AI News Recommender &amp; Analyser</h3>
+              <span class="card__status">In progress</span>
+            </div>
+            <p class="card__desc">An AI-based system that recommends and analyses news, surfacing the stories that matter and breaking down what they mean.</p>
+            <ul class="tags"><li>AI</li><li>NLP</li></ul>
+            <div class="card__links">
+              <a href="#">Live ↗</a>
+              <a href="#">Code ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================== CONTACT ============================== -->
+      <section class="section section--contact" id="contact">
+        <div class="contact reveal">
+          <span class="section__index">05</span>
+          <h2 class="contact__title">Don&rsquo;t let this one get away.</h2>
+          <p class="contact__lead">
+            Founder&rsquo;s drive, enterprise scale, and research depth in one engineer.
+            If you&rsquo;re building something ambitious, let&rsquo;s talk before someone else does.
+          </p>
+          <a class="btn btn--primary btn--lg" href="mailto:marwan02shara@gmail.com?subject=Let%27s%20connect&amp;body=Hi%20Marwan%2C">Get in touch &rarr;</a>
+          <ul class="contact__links">
+            <!-- TODO(marwan): add your real GitHub & LinkedIn URLs -->
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/marwan-shara-73ab541a8/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="mailto:marwan02shara@gmail.com?subject=Resume%20request&amp;body=Hi%20Marwan%2C%20I%27d%20like%20a%20copy%20of%20your%20resume.">Request resume ↗</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Marwan Shara</p>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
